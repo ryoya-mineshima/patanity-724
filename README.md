@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 機能
 
-Things you may want to cover:
+投稿機能
+ユーザー管理機能
+検索機能
+コメント機能
 
-* Ruby version
+# テーブル設計
 
-* System dependencies
+## usersテーブル
 
-* Configuration
+## postsテーブル
 
-* Database creation
+## ｃommentsテーブル
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+|  | string     | null: false                    |
+|  | text       | null: false                    |
+|  | text       | null: false                    |
+|  | references | null: false, foreign_key: true |
