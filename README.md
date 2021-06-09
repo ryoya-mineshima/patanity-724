@@ -24,12 +24,11 @@
 
 
 ## postsテーブル
+ Column       | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| title       | string     | null: false                    |
+| category_id | integer    | null: false                    |
+| user        | references | null: false, foreign_key: true |
+
 
 ## ｃommentsテーブル
-
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-|  | string     | null: false                    |
-|  | text       | null: false                    |
-|  | text       | null: false                    |
-|  | references | null: false, foreign_key: true |
